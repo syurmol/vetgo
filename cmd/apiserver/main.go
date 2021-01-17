@@ -1,11 +1,10 @@
 package main
 
-import (
-	"apiserver/internal/app/apiserver"
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	s := apiserver.New()
-	fmt.Print(s)
+	var m map[string]string = map[string]string{"a": "aa", "b": "bb"}
+	m["a"] = "aaa"
+	fmt.Println(m)
+
 }
